@@ -10,6 +10,18 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "*.{js,ts,jsx,tsx,mdx}"
   ],
+  safelist: [
+    'text-primary',
+    'bg-primary',
+    'border-primary',
+    'hover:bg-primary',
+    'hover:text-white',
+    'bg-primary/5',
+    'hover:bg-primary-light',
+    'text-primary-light',
+    'text-blue-600',
+    'text-pink-600'
+  ],
   theme: {
   	extend: {
   		colors: {
@@ -25,7 +37,8 @@ const config: Config = {
   			},
   			primary: {
   				DEFAULT: 'hsl(var(--primary))',
-  				foreground: 'hsl(var(--primary-foreground))'
+  				foreground: 'hsl(var(--primary-foreground))',
+  				light: 'hsl(var(--primary) / 0.8)'
   			},
   			secondary: {
   				DEFAULT: 'hsl(var(--secondary))',

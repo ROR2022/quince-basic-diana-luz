@@ -64,6 +64,15 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
     const resolvedTheme = theme === 'system' ? systemTheme : theme
     root.classList.add(resolvedTheme)
+
+    // Force CSS custom properties to be available
+    if (resolvedTheme === 'light') {
+      root.style.setProperty('--primary', '219 100% 45%')
+      root.style.setProperty('--primary-foreground', '210 40% 98%')
+    } else {
+      root.style.setProperty('--primary', '219 100% 45%')
+      root.style.setProperty('--primary-foreground', '210 40% 98%')
+    }
   }, [theme, systemTheme, mounted])
 
   const setTheme = (newTheme: Theme) => {
