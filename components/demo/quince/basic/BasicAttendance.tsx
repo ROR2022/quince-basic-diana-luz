@@ -60,7 +60,7 @@ export function BasicAttendance() {
       >
         <h2 className="section-title">{basicDemoData.attendance.title}</h2>
 
-        <div className="mt-4 mb-8 text-center text-slate-300">
+        <div className="mt-4 mb-8 text-center text-slate-600">
           <p className="text-lg">Respetuosamente</p>
           <p className="text-lg font-medium my-2">&lt;{basicDemoData.event.restrictions}&gt;</p>
           <p className="text-lg">{basicDemoData.attendance.subtitle}</p>
@@ -69,7 +69,7 @@ export function BasicAttendance() {
         <div className="bg-white rounded-lg shadow-md p-6 md:p-8 mt-8">
           <form onSubmit={handleSubmit} className="space-y-6 text-left">
             <div>
-              <Label htmlFor="name" className="text-base">
+              <Label htmlFor="name" className="text-black">
                 {basicDemoData.attendance.fields.name}
               </Label>
               <Input
@@ -87,17 +87,21 @@ export function BasicAttendance() {
               <RadioGroup value={attendance || ""} onValueChange={setAttendance}>
                 <div className="flex items-center space-x-2">
                   <RadioGroupItem value="no" id="no" />
-                  <Label htmlFor="no">{basicDemoData.attendance.fields.responseOptions.no}</Label>
+                  <Label
+                  className="text-black" 
+                  htmlFor="no">{basicDemoData.attendance.fields.responseOptions.no}</Label>
                 </div>
                 <div className="flex items-center space-x-2 mt-2">
                   <RadioGroupItem value="yes" id="yes" />
-                  <Label htmlFor="yes">{basicDemoData.attendance.fields.responseOptions.yes}</Label>
+                  <Label 
+                  className="text-black" 
+                  htmlFor="yes">{basicDemoData.attendance.fields.responseOptions.yes}</Label>
                 </div>
               </RadioGroup>
             </div>
 
             <div>
-              <Label htmlFor="companions" className="text-base">
+              <Label htmlFor="companions" className="text-base text-black">
                 {basicDemoData.attendance.fields.companions}
               </Label>
               <Textarea
@@ -110,7 +114,7 @@ export function BasicAttendance() {
             </div>
 
             <div>
-              <Label htmlFor="phone" className="text-base">
+              <Label htmlFor="phone" className="text-base text-black">
                 {basicDemoData.attendance.fields.phone}
               </Label>
               <Input
