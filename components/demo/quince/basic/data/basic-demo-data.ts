@@ -19,15 +19,17 @@ export const basicDemoData = {
     },
     ceremony: {
       time: "12:00 hrs.",
-      venue: "Parroquia San José Obrero",
-      address: "Av. Revolución 123, Centro, 64000 Monterrey, N.L.",
-      type: "Misa de Acción de Gracias"
+      venue: "Parroquia María Auxiliadora",
+      address: "Av. de los Doctores s/n, Laredo, 93260 Poza Rica de Hidalgo, Ver.",
+      type: "Misa de Acción de Gracias",
+      ubiLink: "https://maps.app.goo.gl/PJcvFM6idviWeysM6"
     },
     party: {
       time: "17:00 hrs.",
-      venue: "Salón Los Encinos",
-      address: "Carr. Nacional 456, Valle Alto, 64989 Monterrey, N.L.",
-      type: "Recepción"
+      venue: "Salón Regio",
+      address: "C. 12 237 B, Cazones, 93230 Poza Rica de Hidalgo, Ver.",
+      type: "Recepción",
+      ubiLink: "https://maps.app.goo.gl/XSgNEcf5Kbj7Pxym8"
     },
     dressCode: "Formal",
     restrictions: "No Niños"

@@ -22,14 +22,23 @@ export function BasicEventDetails() {
   const isInView = useInView(ref, { once: true, amount: 0.3 })
 
   return (
-    <section className="py-16 px-4 bg-slate-600">
+    <section 
+    style={{
+        backgroundImage: `url('/images/quince/fondoDiana5.png')`,
+        filter: "brightness(0.7)",
+        backgroundSize: "contain",
+        backgroundPosition: "center",
+        backgroundAttachment: "scroll",
+        
+      }}
+    className="py-16 px-4 ">
       <div
         ref={ref}
-        className={`max-w-4xl mx-auto text-center transition-all duration-1000 ${
+        className={`max-w-4xl mx-auto text-center transition-all duration-1000 bg-slate-300 bg-opacity-60 p-8 rounded-xl ${
           isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
-        <h2 className="section-title">¡LO QUE TIENES QUE SABER!</h2>
+        <h2 className="section-title ">¡LO QUE TIENES QUE SABER!</h2>
 
         <div className="divider">
           <div className="divider-icon">
@@ -64,7 +73,7 @@ export function BasicEventDetails() {
             <Button 
               variant="outline" 
               className="mt-4 border-primary text-primary hover:bg-primary hover:text-white"
-              onClick={() => openInMaps(basicDemoData.event.ceremony.address)}
+              onClick={() => window.open(basicDemoData.event.ceremony.ubiLink, '_blank')}
             >
               IR A MAPS
             </Button>
@@ -79,7 +88,7 @@ export function BasicEventDetails() {
             <Button 
               variant="outline" 
               className="mt-4 border-primary text-primary hover:bg-primary hover:text-white"
-              onClick={() => openInMaps(basicDemoData.event.party.address)}
+              onClick={() => window.open(basicDemoData.event.party.ubiLink, '_blank')}
             >
               IR A MAPS
             </Button>

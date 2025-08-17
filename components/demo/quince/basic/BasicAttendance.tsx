@@ -51,10 +51,19 @@ export function BasicAttendance() {
   }
 
   return (
-    <section className="py-16 px-4 bg-primary/5">
+    <section 
+    style={{
+        backgroundImage: `url('/images/quince/fondoDiana4.png')`,
+        filter: "brightness(0.7)",
+        backgroundSize: "contain",
+        backgroundPosition: "center",
+        backgroundAttachment: "scroll",
+        
+      }}
+    className="py-16 px-4">
       <div
         ref={ref}
-        className={`max-w-3xl mx-auto text-center transition-all duration-1000 ${
+        className={`max-w-3xl mx-auto text-center transition-all duration-1000 bg-slate-300 bg-opacity-80 p-8 rounded-xl ${
           isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
