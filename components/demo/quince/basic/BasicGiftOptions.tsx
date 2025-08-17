@@ -47,7 +47,7 @@ export function BasicGiftOptions() {
             >
               <div className="text-4xl mb-4">{option.icon}</div>
               <h3 className="text-xl font-medium mb-2 text-black">{option.title}</h3>
-              <p className="text-lg font-medium mb-3 text-black">{option.description}</p>
+              <p className="text-lg font-medium mb-3 text-slate-700">{option.description}</p>
               <div className="text-sm text-gray-600 whitespace-pre-line">
                 {option.details}
               </div>
