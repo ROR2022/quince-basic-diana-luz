@@ -5,7 +5,7 @@ const BasicCTA = () => {
   return (
     <div>
         {/* Contenido principal */}
-          <div className="relative z-10 text-center text-white bg-slate-900 rounded-xl">
+          <div className="relative z-10 text-center text-white bg-slate-900 rounded-xl p-6">
             {/* Icono principal */}
             <div 
             style={{display:'none'}}
