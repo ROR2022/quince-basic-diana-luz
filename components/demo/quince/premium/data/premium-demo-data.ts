@@ -40,6 +40,10 @@ export const premiumDemoData = {
     blessing: "con la bendición de Dios y mis padres:",
     celebrant: basicDemoData.event.celebrant,
     parents: basicDemoData.event.parents,
+    godParents: {
+      godFather: "Jorge Santos Vargas",
+      godMother: "Ana Luisa Ortuño Alamilla "
+    },
     decorativeMessage: "Te esperamos en este día tan especial"
   },
   

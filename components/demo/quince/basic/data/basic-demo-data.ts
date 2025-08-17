@@ -9,8 +9,8 @@ export const basicDemoData = {
   event: {
     celebrant: "Diana Luz Quirino Ortuño",
     parents: {
-      father: "MIGUEL ÁNGEL GONZÁLEZ RIVERA",
-      mother: "PATRICIA HERNÁNDEZ LÓPEZ"
+      father: "Kendor E. Quirino Tolentino",
+      mother: "Cirila Irene Ortuño Alamilla"
     },
     date: {
       full: "Sábado 8 de Noviembre 2025",

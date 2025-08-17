@@ -9,10 +9,19 @@ export function PremiumInvitation() {
   const isInView = useInView(ref, { once: true, amount: 0.3 })
 
   return (
-    <section className="py-16 px-4 bg-gradient-to-br from-purple-50 to-pink-50">
+    <section 
+    style={{
+        backgroundImage: `url('/images/quince/fondoDiana1.png')`,
+        filter: "brightness(0.7)",
+        backgroundSize: "contain",
+        backgroundPosition: "center",
+        backgroundAttachment: "scroll",
+        
+      }}
+    className="py-16 px-4 ">
       <div
         ref={ref}
-        className={`max-w-3xl mx-auto text-center transition-all duration-1000 ${
+        className={`max-w-3xl mx-auto text-center transition-all bg-slate-300 bg-opacity-80 rounded-xl p-6 duration-1000 ${
           isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
@@ -48,6 +57,28 @@ export function PremiumInvitation() {
           </div>
         </div>
 
+        <div>
+          <p className="font-bold text-lg">Y mis Padrinos:</p>
+        </div>
+
+
+        {/* Información de padres - Premium */}
+        <div className="my-12 bg-white rounded-2xl p-8 shadow-lg border border-purple-100">
+          <div className="space-y-4">
+            <p className="text-primary text-2xl font-medium">
+              {premiumDemoData.invitation.godParents.godFather}
+            </p>
+            <div className="flex items-center justify-center">
+              <div className="w-8 h-px bg-gradient-to-r from-purple-400 to-pink-400"></div>
+              <p className="mx-4 text-gray-600 font-light text-lg">&</p>
+              <div className="w-8 h-px bg-gradient-to-r from-purple-400 to-pink-400"></div>
+            </div>
+            <p className="text-primary text-2xl font-medium">
+              {premiumDemoData.invitation.godParents.godMother}
+            </p>
+          </div>
+        </div>
+
         {/* Mensaje decorativo premium */}
         <div className="mt-8 p-6 bg-gradient-to-r from-purple-100 to-pink-100 rounded-xl border border-purple-200">
           <p className="text-lg text-purple-800 italic">
@@ -73,12 +104,7 @@ export function PremiumInvitation() {
           </div>
         </div>
 
-        {/* Nota del premium */}
-        <div className="mt-8 p-3 bg-purple-50 rounded-lg border border-purple-200">
-          <p className="text-xs text-purple-700">
-            💎 <strong>Premium:</strong> Invitación completa con información detallada de los padres y diseño personalizado.
-          </p>
-        </div>
+        
       </div>
     </section>
   )
