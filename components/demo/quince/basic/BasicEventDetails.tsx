@@ -22,7 +22,7 @@ export function BasicEventDetails() {
   const isInView = useInView(ref, { once: true, amount: 0.3 })
 
   return (
-    <section className="py-16 px-4 bg-white">
+    <section className="py-16 px-4 bg-slate-600">
       <div
         ref={ref}
         className={`max-w-4xl mx-auto text-center transition-all duration-1000 ${
