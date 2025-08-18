@@ -1,16 +1,18 @@
+//import { title } from "process"
+
 // Datos demo para el paquete básico de quinceañera
 export const basicDemoData = {
   hero: {
     name: "Diana Luz",
     subtitle: "¡Mis XV años!",
-    backgroundImage: "/images/quince/quince1.jpeg"
+    backgroundImage: "/images/quince/quinceVestidoVerde3.jpeg"
   },
   
   event: {
     celebrant: "Diana Luz Quirino Ortuño",
     parents: {
       father: "Kendor E. Quirino Tolentino",
-      mother: "Cirila Irene Ortuño Alamilla"
+      mother: "Ciria Irene Ortuño Alamilla"
     },
     date: {
       full: "Sábado 8 de Noviembre 2025",
@@ -61,16 +63,16 @@ export const basicDemoData = {
     message: "Mi mejor regalo es compartir contigo este gran día, si deseas obsequiarme algo, puedo sugerir las siguientes opciones:",
     options: [
       {
-        icon: "💳",
-        title: "Transferencia Bancaria",
+        icon: "🏦",
+        title: "Transferencia",
         description: "BBVA Bancomer",
-        details: "Cuenta: 1234567890\nCLABE: 012345678901234567\nA nombre de: Patricia Hernández López"
+        details: "Tarjeta: 4152 3142 6377 0672\nA nombre de: Ciria Irene Ortuño Alamilla"
       },
       {
         icon: "🎁",
-        title: "Mesa de Regalos",
-        description: "Liverpool",
-        details: "Evento: XV años Isabella\nCódigo: 51234567"
+        title: "Regalo Sorpresa",
+        description: "¡Un detalle especial para mi fiesta!",
+        details: "Tu presencia es mi mejor regalo, ¡gracias!"
       },
       {
         icon: "💰",
