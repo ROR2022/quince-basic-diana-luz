@@ -20,14 +20,14 @@ export const basicDemoData = {
       date: "8 de Noviembre 2025"
     },
     ceremony: {
-      time: "12:00 hrs.",
+      time: "18:00 hrs.",
       venue: "Parroquia María Auxiliadora",
       address: "Av. de los Doctores s/n, Laredo, 93260 Poza Rica de Hidalgo, Ver.",
       type: "Misa de Acción de Gracias",
       ubiLink: "https://maps.app.goo.gl/PJcvFM6idviWeysM6"
     },
     party: {
-      time: "17:00 hrs.",
+      time: "19:00 hrs.",
       venue: "Salón Regio",
       address: "C. 12 237 B, Cazones, 93230 Poza Rica de Hidalgo, Ver.",
       type: "Recepción",
@@ -38,7 +38,7 @@ export const basicDemoData = {
   },
 
   countdown: {
-    targetDate: "November 8, 2025 12:00:00",
+    targetDate: "November 8, 2025 18:00:00",
     backgroundImage: "/images/countdown-bg.jpg"
   },
 
