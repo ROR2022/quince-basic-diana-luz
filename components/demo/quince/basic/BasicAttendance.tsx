@@ -69,7 +69,9 @@ export function BasicAttendance() {
       >
         <h2 className="section-title">{basicDemoData.attendance.title}</h2>
 
-        <div className="mt-4 mb-8 text-center text-slate-600">
+        <div 
+        style={{display:'none'}}
+        className="mt-4 mb-8 text-center text-slate-600">
           <p className="text-lg">Respetuosamente</p>
           <p className="text-lg font-medium my-2">&lt;{basicDemoData.event.restrictions}&gt;</p>
           <p className="text-lg">{basicDemoData.attendance.subtitle}</p>
